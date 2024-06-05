@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">graduate_project_mobile</string>
+    <string name="username">Enter your username</string>
+    <string name="password">Enter your password</string>
+    <string name="Cpassword">Confirm password</string>
+    <string name="email">Enter your email</string>
+    <string name="firstName">Enter your first name</string>
+    <string name="lastName">Enter your last name</string>
+    <string name="phone">Enter your phone number</string>
+    <string name="age">Enter your age</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="fPassword">Forgot my password</string>
+    <string name="submit">Submit</string>
+    <string name="VCode">Enter here the verification code from your email</string>
+    <string name="VCode2">verification code</string>
+    <string name="resetPassword">Please insert your username and email to send you a verification code and change your password</string>
+    <string name="checkEmail">Please check your email for the verification code !</string>
+    <string name="action_settings">Settings</string>
+    <string name="model">Model :</string>
+    <string name="price">Price :</string>
+    <string name="rent">Rent now</string>
+    <string name="car_image">Car Image</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+</resources>
