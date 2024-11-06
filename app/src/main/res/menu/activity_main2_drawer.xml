@@ -6,15 +6,39 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/house_chimney"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_maps"
+            android:icon="@drawable/map_marker"
+            android:title="@string/menu_maps" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_rent"
+            android:icon="@drawable/rent"
+            android:title="@string/menu_rent" />
+        <item
+            android:id="@+id/nav_addcar"
+            android:icon="@drawable/add"
+            android:title="@string/menu_addCar" />
+        <item
+            android:id="@+id/nav_requestsFor"
+            android:icon="@drawable/request_for"
+            android:title="@string/menu_requestForCar" />
+        <item
+            android:id="@+id/nav_requestsMy"
+            android:icon="@drawable/request_my"
+            android:title="@string/menu_requestMyCar" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/user"
+            android:title="@string/menu_profile" />
+
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/exit"
+            android:title="@string/logout2"/>
     </group>
 </menu>

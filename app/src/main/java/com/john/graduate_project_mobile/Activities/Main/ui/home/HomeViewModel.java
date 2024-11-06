@@ -7,13 +7,28 @@ import androidx.lifecycle.ViewModel;
 public class HomeViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
+    private final MutableLiveData<Integer> backId;
 
     public HomeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue(null);
+        backId = new MutableLiveData<>();
+        backId.setValue(null);
     }
 
-    public LiveData<String> getText() {
+    public LiveData<String> getData() {
         return mText;
+    }
+
+    public void setData(String license) {
+        mText.setValue(license);
+    }
+
+    public LiveData<Integer> getID() {
+        return backId;
+    }
+
+    public void setID(int id) {
+        backId.setValue(id);
     }
 }

@@ -16,7 +16,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.john.graduate_project_mobile.Activities.Main.Main2Activity;
 import com.john.graduate_project_mobile.Activities.Main.MainActivity;
 import com.john.graduate_project_mobile.R;
 import com.john.graduate_project_mobile.Security.JWTGenerator;
@@ -37,7 +36,7 @@ public class AuthActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auth);
         requestQueue = Volley.newRequestQueue(this);
-        preferences = getPreferences(MODE_PRIVATE);
+        preferences = getSharedPreferences("Profile",MODE_PRIVATE);
         try {
             token = preferences.getString("token", " ");
             if (jwtGenerator.validateToken(token)){
@@ -74,7 +73,7 @@ public class AuthActivity extends AppCompatActivity {
             public void onResponse(JSONObject response) {
                 if (response.length() == 3){
                     try {
-                        Toast.makeText(AuthActivity.this, response.getString("msg"), Toast.LENGTH_LONG).show();
+                        Toast.makeText(AuthActivity.this, response.getString("msg"), Toast.LENGTH_SHORT).show();
                         token = response.getString("token");
                         name = response.getString("name");
                         SharedPreferences.Editor editor = preferences.edit();
@@ -85,7 +84,7 @@ public class AuthActivity extends AppCompatActivity {
                         Intent intent = new Intent(AuthActivity.this, MainActivity.class);
                         intent.putExtra("token",token);
                         intent.putExtra("name", name);
-                        editor.putString("username", username);
+                        intent.putExtra("username", username);
                         startActivity(intent);
                     } catch (JSONException e) {
                         throw new RuntimeException(e);
@@ -265,8 +264,8 @@ public class AuthActivity extends AppCompatActivity {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.layoutForFragment, myFragment);
-        //fragmentTransaction.add(R.id.layoutForFragment, myFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
+
 }

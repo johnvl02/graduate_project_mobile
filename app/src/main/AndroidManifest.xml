@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,6 +16,11 @@
         android:theme="@style/Theme.Graduate_project_mobile"
         android:usesCleartextTraffic="true"
         tools:targetApi="31" >
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCsjE9FpIdfsbxYDvsKm8eTFr4aZm-skbc" />
+
         <activity
             android:name=".Activities.Main.MainActivity"
             android:exported="false"
@@ -29,16 +35,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Register"
-            android:exported="false" />
-        <activity
-            android:name=".Login"
-            android:exported="false" >
-        </activity>
-        <activity
-            android:name=".Activities.Main.Main2Activity"
-            android:exported="false" />
     </application>
 
 </manifest>

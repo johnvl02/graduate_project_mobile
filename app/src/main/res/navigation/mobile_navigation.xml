@@ -12,19 +12,88 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.john.graduate_project_mobile.Activities.Main.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_rent"
+        android:name="com.john.graduate_project_mobile.Activities.Main.ui.Rent.RentFragment"
+        android:label="@string/menu_rent"
+        tools:layout="@layout/fragment_rent" />
+
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.john.graduate_project_mobile.Activities.Main.UserInfo.InfoFragment"
+        android:label="@string/menu_rent"
+        tools:layout="@layout/fragment_info">
+        <action
+            android:id="@+id/action_nav_info_to_nav_rent"
+            app:destination="@id/nav_rent" />
+    </fragment>
 
     <fragment
         android:id="@+id/rentCar"
-        android:name="com.john.graduate_project_mobile.Activities.Main.ui.rentCar.RentFragment"
+        android:name="com.john.graduate_project_mobile.Activities.Main.ui.showCar.ShowCarFragment"
         android:label="@string/rent"
-        tools:layout="@layout/fragment_rent" />
+        tools:layout="@layout/fragment_show_car" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.john.graduate_project_mobile.Activities.Main.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_addcar"
+        android:name="com.john.graduate_project_mobile.Activities.Main.ui.AddCar.AddCarFragment"
+        android:label="@string/menu_addCar"
+        tools:layout="@layout/fragment_addcar" />
+    <fragment
+        android:id="@+id/nav_requestsFor"
+        android:name="com.john.graduate_project_mobile.Activities.Main.ui.Requests.RequestRentACar.RequestsForFragment"
+        android:label="@string/menu_requestForCar"
+        tools:layout="@layout/fragment_requests_for" />
+
+    <fragment
+        android:id="@+id/nav_requestsForCar"
+        android:name="com.john.graduate_project_mobile.Activities.Main.ui.Requests.RequestRentACar.RequestRentACarFragment"
+        android:label="@string/menu_requestForCar"
+        tools:layout="@layout/fragment_request_rent_a_car" />
+
+    <fragment
+        android:id="@+id/nav_requestsMy"
+        android:name="com.john.graduate_project_mobile.Activities.Main.ui.Requests.RequestRentYourCar.RequestsMyFragment"
+        android:label="@string/menu_requestMyCar"
+        tools:layout="@layout/fragment_requests_my" />
+    <fragment
+        android:id="@+id/nav_requestsMyCar"
+        android:name="com.john.graduate_project_mobile.Activities.Main.ui.Requests.RequestRentYourCar.RequestRentMyCarFragment"
+        android:label="@string/menu_requestMyCar"
+        tools:layout="@layout/fragment_request_rent_my_car" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.john.graduate_project_mobile.Activities.Main.ui.Profile.MyProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_my_profile" />
+    <fragment
+        android:id="@+id/nav_editProfile"
+        android:name="com.john.graduate_project_mobile.Activities.Main.ui.Profile.EditProfileFragment"
+        android:label="@string/menu_editProfile"
+        tools:layout="@layout/fragment_edit_profile" />
+
+    <fragment
+        android:id="@+id/nav_renterProfile"
+        android:name="com.john.graduate_project_mobile.Activities.Main.ui.Profile.ProfileFragment"
+        android:label="@string/menu_profile2"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_review"
+        android:name="com.john.graduate_project_mobile.Activities.Main.ui.Review.ReviewFragment"
+        android:label="@string/review"
+        tools:layout="@layout/fragment_review" />
+    <fragment
+        android:id="@+id/nav_maps"
+        android:name="com.john.graduate_project_mobile.Activities.Main.ui.Map.MapFragment"
+        android:label="@string/menu_maps"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.john.graduate_project_mobile.Activities.Main.ui.Logout.LogoutFragment"
+        android:label="@string/logout2"
+        tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/nav_editCar"
+        android:name="com.john.graduate_project_mobile.Activities.Main.ui.EditCar.EditCarFragment"
+        android:label="@string/editCar"
+        tools:layout="@layout/fragment_edit_car" />
+
 </navigation>
